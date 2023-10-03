@@ -2,6 +2,16 @@ const path = require('path');
 
 module.exports = {
   entry: './src/index.js',
+
+  // entry: './src/index.js',
+
+  // resolve: {
+  //   extensions: ['.ts', '.js'],
+  // },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css', '.scss'],
+    modules: ['src', 'node_modules'] // Assuming that your files are inside the src dir
+  },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -14,4 +24,5 @@ module.exports = {
       },
     ],
   },
+  mode: "development",
 };
