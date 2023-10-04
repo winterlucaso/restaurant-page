@@ -1,5 +1,5 @@
 function createMenu() {
-    const menu = document.createElement('div');
+    const menu = document.createElement('section');
     menu.appendChild(createMenuItem("Baked Beans", "Bean, Bacon, Brisket"));
     menu.appendChild(createMenuItem("Green Beans", "Green Beans, Bacon, Butter"));
 
@@ -7,7 +7,7 @@ function createMenu() {
 }
 
 function createMenuItem(name, description) {
-    const menuItem = document.createElement('div');
+    const menuItem = document.createElement('article');
     menuItem.classList.add("menu-item");
 
     const itemName = document.createElement('div');

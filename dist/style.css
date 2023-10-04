@@ -56,18 +56,22 @@ table {
     border: 2px solid red;
 } */
 
+/* ---Body--- */
 #body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
 }
 
+/* ---Header--- */
 header {
     text-align: center;
     font-size: 70px;
     padding: 20px;
+    font-family: 'Brush Script MT', cursive;
 }
 
+/* ---Nav--- */
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -85,15 +89,18 @@ nav {
 
 nav button {
     background-color: transparent;
-    color: white;
     padding: 10px;
+    color: white;
     font-size: 15px;
+    border: none;
 }
 
 .active-tab {
     border: none;
     border-bottom: 2px solid white;
 }
+
+/* ---Main--- */
 
 main {
     display: grid;
@@ -107,29 +114,41 @@ main section {
     border-radius: 3px;
 }
 
-.chefImg {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-}
-
 main section div {
     text-align: center;
-    padding: 10px;
 }
 
+/* Home */
+.chefImg {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Menu */
 .menu-item {
-    background-color: rgba(41, 41, 41, 0.8);
+    border-bottom: 1px solid white;
+    padding: 15px;
 }
 
 .item-name {
-    color: red;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: 600px;
 }
 
 .item-description {
-    color: blue;
+    margin: 5px;
+    font-size: 15px;
 }
 
+/* Menu */
+.contact-info {
+    margin: 15px;
+}
+
+/* ---Footer--- */
 footer {
     text-align: center;
     padding: 20px;
